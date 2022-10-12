@@ -2,8 +2,8 @@ module Person where
 
 import qualified Data.Set as Set
 
-data Tree a = Tree 
-  { person :: Person
+data Tree t = Tree {
+    person :: Person
   , parent1 :: Maybe (Tree Person)
   , parent2 :: Maybe (Tree Person)
   , children :: [Person]
